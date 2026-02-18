@@ -1,152 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PARKat</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARKat Privacy Policy</title>
+
+  <!-- Noto Sans from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="nav">
-    <a class="brand" href="index.html">
-      <span class="logo" aria-hidden="true"></span>
-      <span>PARKat</span>
-    </a>
 
-    <div class="navlinks">
-      <a class="active" href="index.html" data-i18n="nav_home"></a>
-      <a href="download.html" data-i18n="nav_download"></a>
-      <a href="guide.html" data-i18n="nav_guide"></a>
-      <a href="privacy.html" data-i18n="nav_privacy"></a>
-    </div>
+  <div class="container">
+    <h1>Privacy Policy – PARKat</h1>
+    <p class="effective-date">Effective date: 18 February 2026</p>
 
-    <div class="controls">
-      <span class="pill"><span data-i18n="pill_research"></span></span>
-      <button class="btn" id="langToggle" type="button">EN</button>
-    </div>
-  </div>
-</header>
-
-<main>
-  <div class="hero">
-    <h1 data-i18n="home_title"></h1>
-    <p class="subtitle" data-i18n="home_subtitle"></p>
-  </div>
-
-  <div class="grid">
-    <div class="card">
-      <h2 data-i18n="home_quicklinks_title"></h2>
+    <section>
+      <h2>1. Data We Collect</h2>
       <ul>
-        <li><a href="download.html" data-i18n="home_quicklinks_download"></a></li>
-        <li><a href="guide.html" data-i18n="home_quicklinks_guide"></a></li>
-        <li><a href="privacy.html" data-i18n="home_quicklinks_privacy"></a></li>
+        <li>Precise location data (GPS)</li>
+        <li>Sensor data (accelerometer)</li>
+        <li>Trip timestamps</li>
+        <li>Anonymous user identifier (Firebase UID)</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2 data-i18n="home_highlevel_title"></h2>
-      <ul>
-        <li data-i18n="home_highlevel_1"></li>
-        <li data-i18n="home_highlevel_2"></li>
-        <li data-i18n="home_highlevel_3"></li>
-      </ul>
-    </div>
+    <section>
+      <h2>2. Purpose of Data Collection</h2>
+      <p>
+        The PARKat application collects data exclusively for academic research purposes.
+        The objective is to analyze parking search behavior and urban mobility patterns.
+      </p>
+    </section>
 
-    <div class="card small">
-      <h2 data-i18n="home_for_testers_title"></h2>
-      <p data-i18n="home_for_testers_text"></p>
-      <a class="btn primary" href="download.html" data-i18n="home_for_testers_cta"></a>
-    </div>
+    <section>
+      <h2>3. Data Storage and Security</h2>
+      <p>
+        All data is securely transmitted and stored using Firebase Firestore.
+        Communication is encrypted using HTTPS protocols.
+      </p>
+    </section>
 
-    <div class="card small">
-      <h2 data-i18n="home_privacy_title"></h2>
-      <p data-i18n="home_privacy_text"></p>
-      <a class="btn" href="privacy.html" data-i18n="home_privacy_cta"></a>
-    </div>
+    <section>
+      <h2>4. Data Retention</h2>
+      <p>
+        Data is retained only for the duration of the research project.
+        Aggregated or anonymized data may be used for scientific publication.
+      </p>
+    </section>
 
-    <div class="card small">
-      <h2 data-i18n="home_contact_title"></h2>
-      <p data-i18n="home_contact_text"></p>
-    </div>
+    <section>
+      <h2>5. User Rights</h2>
+      <p>
+        Users may request deletion of their data at any time by contacting:
+        <br>
+        <strong>your-email@ntua.gr</strong>
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Research Institution</h2>
+      <p>
+        This research is conducted by the National Technical University of Athens (NTUA).
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 PARKat Research Project</p>
+    </footer>
   </div>
 
-  <div class="section">
-    <h2 data-i18n="home_note_title"></h2>
-    <p data-i18n="home_note_text"></p>
-  </div>
-</main>
-
-<footer>
-  <div class="footerInner">
-    <span data-i18n="footer_left"></span>
-    <span><a href="privacy.html" data-i18n="footer_privacy"></a></span>
-  </div>
-</footer>
-
-<script>
-  // Translations for THIS page
-  const I18N = {
-    el: {
-      nav_home: "Αρχική",
-      nav_download: "Λήψη",
-      nav_guide: "Οδηγίες χρήσης",
-      nav_privacy: "Privacy Policy",
-      pill_research: "Research pilot",
-      home_title: "PARKat",
-      home_subtitle: "Εφαρμογή συλλογής δεδομένων κινητικότητας για ανάλυση συμπεριφοράς αναζήτησης στάθμευσης (parking search).",
-      home_quicklinks_title: "Γρήγορα links",
-      home_quicklinks_download: "Πώς κατεβάζω/εγκαθιστώ την εφαρμογή",
-      home_quicklinks_guide: "Πώς τη χρησιμοποιώ (βήμα-βήμα)",
-      home_quicklinks_privacy: "Privacy Policy (για Play Store)",
-      home_highlevel_title: "Τι καταγράφει (σε υψηλό επίπεδο)",
-      home_highlevel_1: "Τοποθεσία (GPS) και βασικά timestamps της διαδρομής",
-      home_highlevel_2: "Δεδομένα κίνησης συσκευής (π.χ. accelerometer) για ερευνητική ανάλυση",
-      home_highlevel_3: "Σύντομες ερωτήσεις στο τέλος της διαδρομής",
-      home_for_testers_title: "Για testers",
-      home_for_testers_text: "Αν συμμετέχεις στο pilot, θα λάβεις private link για εγκατάσταση μέσω Google Play.",
-      home_for_testers_cta: "Οδηγίες λήψης",
-      home_privacy_title: "Απόρρητο",
-      home_privacy_text: "Δες πώς συλλέγονται, αποθηκεύονται και διαγράφονται τα δεδομένα.",
-      home_privacy_cta: "Δες το Privacy Policy",
-      home_contact_title: "Επικοινωνία",
-      home_contact_text: "NTUA – Ερευνητική χρήση (pilot).",
-      home_note_title: "Σημείωση",
-      home_note_text: "Για λεπτομέρειες σχετικά με δικαιώματα χρήστη και διαγραφή δεδομένων, δες το Privacy Policy.",
-      footer_left: "© PARKat – DSAIT",
-      footer_privacy: "Privacy Policy"
-    },
-    en: {
-      nav_home: "Home",
-      nav_download: "Download",
-      nav_guide: "User guide",
-      nav_privacy: "Privacy Policy",
-      pill_research: "Research pilot",
-      home_title: "PARKat",
-      home_subtitle: "A research app that collects mobility data to analyze cruising for parking (parking search) behavior.",
-      home_quicklinks_title: "Quick links",
-      home_quicklinks_download: "How to install the app",
-      home_quicklinks_guide: "How to use it (step-by-step)",
-      home_quicklinks_privacy: "Privacy Policy (for Play Store)",
-      home_highlevel_title: "What it collects (high level)",
-      home_highlevel_1: "Precise location (GPS) and trip timestamps",
-      home_highlevel_2: "Device motion data (e.g., accelerometer) for research analysis",
-      home_highlevel_3: "Short end-of-trip questions",
-      home_for_testers_title: "For testers",
-      home_for_testers_text: "If you are part of the pilot, you will receive a private Google Play link to install the app.",
-      home_for_testers_cta: "Download instructions",
-      home_privacy_title: "Privacy",
-      home_privacy_text: "Learn how data is collected, stored, and deleted.",
-      home_privacy_cta: "Open Privacy Policy",
-      home_contact_title: "Contact",
-      home_contact_text: "NTUA – Research use (pilot).",
-      home_note_title: "Note",
-      home_note_text: "For user rights and data deletion, please read the Privacy Policy.",
-      footer_left: "© PARKat – DSAIT",
-      footer_privacy: "Privacy Policy"
-    }
-  };
-</script>
-<script src="app.js"></script>
 </body>
 </html>
