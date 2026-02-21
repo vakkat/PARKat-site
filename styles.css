@@ -51,9 +51,10 @@ header{
   letter-spacing:.2px;
 }
 .logo{
-  width:34px; height:34px; border-radius:12px;
-  background: linear-gradient(135deg, var(--accent), #3b82f6);
-  box-shadow: 0 10px 30px rgba(124,58,237,.25);
+  width:36px;
+  height:36px;
+  object-fit: contain;
+  border-radius:8px; /* optional */
 }
 
 .navlinks{ display:flex; gap:10px; margin-left:10px; flex:1; flex-wrap:wrap; }
