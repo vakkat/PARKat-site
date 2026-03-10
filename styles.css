@@ -11,7 +11,7 @@
   --line:rgba(255,255,255,.08);
   --accent:#7c3aed;
   --accent2:#22c55e;
-  --max: 980px;
+  --max:980px;
 }
 
 *{ box-sizing:border-box; }
@@ -218,7 +218,7 @@ h1{
 .card a[href^="mailto:"]{
   color:var(--text);
   text-decoration:underline;
-  text-underline-offset: 3px;
+  text-underline-offset:3px;
 }
 
 .section{
@@ -267,7 +267,7 @@ h1{
   line-height:1.55;
 }
 
-/* nicer button wrapper for download/play CTA */
+/* old custom CTA support */
 .downloadButtonWrapper{
   margin-top:24px;
 }
@@ -289,6 +289,49 @@ h1{
   transform: translateY(-1px);
   background: rgba(124,58,237,.30);
   border-color: rgba(124,58,237,.65);
+}
+
+/* Google Play badge block */
+.storeBadgeWrap{
+  margin-top:22px;
+}
+
+.storeBadgeLink{
+  display:inline-block;
+}
+
+.storeBadge{
+  height:64px;
+  width:auto;
+  display:none;
+  transition: transform .18s ease, opacity .18s ease;
+}
+
+.storeBadgeLink:hover .storeBadge{
+  transform: translateY(-2px);
+  opacity:.96;
+}
+
+/* language switch for badges */
+html[data-lang="el"] .badge-el{
+  display:inline-block;
+}
+html[data-lang="el"] .badge-en{
+  display:none;
+}
+
+html[data-lang="en"] .badge-el{
+  display:none;
+}
+html[data-lang="en"] .badge-en{
+  display:inline-block;
+}
+
+.storeNote{
+  margin-top:10px;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.5;
 }
 
 /* inline utility if needed for highlighted support/info */
@@ -352,5 +395,9 @@ footer{
 
   .controls{
     gap:8px;
+  }
+
+  .storeBadge{
+    height:56px;
   }
 }
