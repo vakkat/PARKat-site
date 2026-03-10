@@ -170,7 +170,10 @@ h1{
   background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
   border:1px solid var(--line);
   border-radius:18px;
-  padding:18px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
   box-shadow: 0 8px 22px rgba(0,0,0,.16);
   transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
 }
@@ -186,7 +189,7 @@ h1{
 }
 
 .card h2{
-  margin:4px 0 8px;
+  margin:0;
   font-size:18px;
   line-height:1.35;
   color:var(--text);
@@ -201,13 +204,9 @@ h1{
   margin:0;
 }
 
-.card p + p{
-  margin-top:10px;
-}
-
 .card ul,
 .card ol{
-  margin:10px 0 0;
+  margin:0;
   padding-left:20px;
 }
 
@@ -219,6 +218,15 @@ h1{
   color:var(--text);
   text-decoration:underline;
   text-underline-offset:3px;
+}
+
+/* extra spacing safeguard for mixed content */
+.card > * + *{
+  margin-top:0;
+}
+
+.card .btn{
+  align-self:flex-start;
 }
 
 .section{
@@ -241,7 +249,7 @@ h1{
 
 /* ordered / instructional lists */
 .steps{
-  margin:12px 0 0;
+  margin:0;
   padding-left:22px;
 }
 
@@ -257,7 +265,7 @@ h1{
 
 /* optional old class compatibility */
 .list{
-  margin:12px 0 0;
+  margin:0;
   padding-left:22px;
 }
 
@@ -265,6 +273,10 @@ h1{
   color:var(--muted);
   margin-bottom:10px;
   line-height:1.55;
+}
+
+.list li:last-child{
+  margin-bottom:0;
 }
 
 /* old custom CTA support */
@@ -293,7 +305,7 @@ h1{
 
 /* Google Play badge block */
 .storeBadgeWrap{
-  margin-top:22px;
+  margin-top:4px;
 }
 
 .storeBadgeLink{
@@ -328,10 +340,11 @@ html[data-lang="en"] .badge-en{
 }
 
 .storeNote{
-  margin-top:10px;
+  margin-top:8px;
   font-size:13px;
   color:var(--muted);
   line-height:1.5;
+  max-width:520px;
 }
 
 /* inline utility if needed for highlighted support/info */
