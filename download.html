@@ -11,7 +11,6 @@
 
 <header>
   <div class="nav">
-
     <a class="brand" href="index.html">
       <img src="./PARKat.png" alt="PARKat logo" class="logo">
       <span>PARKat</span>
@@ -26,9 +25,8 @@
 
     <div class="controls">
       <span class="pill"><span data-i18n="pill_research"></span></span>
-      <button class="btn" id="langToggle">EN</button>
+      <button class="btn" id="langToggle" type="button">EN</button>
     </div>
-
   </div>
 </header>
 
@@ -39,84 +37,66 @@
     <p class="subtitle" data-i18n="download_subtitle"></p>
   </div>
 
-  <div class="section">
+  <div class="grid">
 
     <!-- INSTALL APP -->
     <div class="card">
       <h2 data-i18n="download_step1_title"></h2>
-
       <p data-i18n="download_step1_text"></p>
 
-      <div style="margin-top:20px;">
-        <a class="primaryButton"
-           href="PLAYSTORE_LINK_HERE"
-           target="_blank"
-           rel="noopener">
-           Google Play
+      <div style="margin-top: 20px;">
+        <a
+          class="btn primary"
+          href="https://play.google.com/store/apps/details?id=gr.ntua.parkat_app"
+          target="_blank"
+          rel="noopener"
+          style="display:inline-flex; align-items:center; gap:10px; padding:12px 18px; font-size:15px;"
+        >
+          <span style="font-size:18px;">▶</span>
+          <span data-i18n="download_cta"></span>
         </a>
       </div>
     </div>
 
-
     <!-- BEFORE START -->
     <div class="card">
-
       <h2 data-i18n="download_step2_title"></h2>
-
-      <ol class="list">
+      <ol class="steps">
         <li data-i18n="download_step2_a"></li>
         <li data-i18n="download_step2_b"></li>
         <li data-i18n="download_step2_c"></li>
       </ol>
-
     </div>
-
 
     <!-- DURING USE -->
     <div class="card">
-
       <h2 data-i18n="download_step3_title"></h2>
-
-      <ol class="list">
+      <ol class="steps">
         <li data-i18n="download_step3_a"></li>
         <li data-i18n="download_step3_b"></li>
         <li data-i18n="download_step3_c"></li>
         <li data-i18n="download_step3_d"></li>
       </ol>
-
     </div>
-
 
     <!-- NOTE -->
     <div class="card">
-
       <h2 data-i18n="download_note_title"></h2>
-
       <p data-i18n="download_note_text"></p>
-
     </div>
 
-
     <!-- CONTACT FOR TESTERS -->
-    <div class="card">
-
-      <h2>Support</h2>
-
-      <p>
-        If you encounter any issues while installing or using the application,
-        please contact the research team.
-      </p>
-
+    <div class="card small">
+      <h2 data-i18n="download_contact_title"></h2>
+      <p data-i18n="download_contact_text"></p>
       <p style="margin-top:8px;">
-        📧 kvakrinou@mail.ntua.gr
+        📧 <a href="mailto:kvakrinou@mail.ntua.gr">kvakrinou@mail.ntua.gr</a>
       </p>
-
     </div>
 
   </div>
 
 </main>
-
 
 <footer>
   <div class="footerInner">
@@ -127,11 +107,7 @@
   </div>
 </footer>
 
-
-<!-- PAGE TRANSLATIONS -->
-<script src="download-i18n.js?v=2"></script>
-
-<!-- SHARED TRANSLATION SCRIPT -->
+<script src="download-i18n.js?v=3"></script>
 <script src="app.js?v=2"></script>
 
 </body>
